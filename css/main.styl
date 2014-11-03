@@ -22,6 +22,7 @@ body
 	color gris_oscuro
 	font-family Arial
 	font-size 16px
+	transition font-size 1s
 
 footer
 	background naranja
@@ -41,6 +42,15 @@ footer
 			&:before
 			&:after
 				content " - "
+
+form
+	display none
+	padding .8em
+	
+	label
+		display inline-block
+		width 60px
+
 	
 header
 	background gris_oscuro
@@ -81,10 +91,12 @@ header
 				font-family iconos
 				content "\e600"
 				margin-right 3px
-
+		
+		.sizer
+			text-decoration none
 
 		.titulo
-			font-size 18px
+			font-size 1.1em
 			font-weight normal
 			margin 0
 			padding 0
@@ -138,12 +150,11 @@ nav
 		height 40px
 		line-height 40px
 		margin 0
-		overflow-x hidden
+		overflow-x auto
 		overflow-y hidden
 		padding 0
 		white-space nowrap
-		&:hover
-			overflow-x auto
+		
 		
 		li
 			display inline-block

@@ -13,6 +13,7 @@ body {
   color: #444;
   font-family: Arial;
   font-size: 16px;
+  transition: font-size 1s;
 }
 footer {
   background: #dd4f24;
@@ -31,6 +32,14 @@ footer h3 strong {
 footer h3 .mejor:before,
 footer h3 .mejor:after {
   content: " - ";
+}
+form {
+  display: none;
+  padding: 0.8em;
+}
+form label {
+  display: inline-block;
+  width: 60px;
 }
 header {
   background: #444;
@@ -73,8 +82,11 @@ header .titular .publicar:before {
   content: "\e600";
   margin-right: 3px;
 }
+header .titular .sizer {
+  text-decoration: none;
+}
 header .titular .titulo {
-  font-size: 18px;
+  font-size: 1.1em;
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -131,13 +143,10 @@ nav .menu {
   height: 40px;
   line-height: 40px;
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: hidden;
   padding: 0;
   white-space: nowrap;
-}
-nav .menu:hover {
-  overflow-x: auto;
 }
 nav .menu li {
   display: inline-block;
